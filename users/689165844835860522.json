@@ -1,4 +1,10 @@
 {
+    "BadgeVault": [
+        {
+            "name": "iOS User",
+            "badge": "https://gb.obamabot.me/daa22e7d0ea819b9338a280d36ccae78c860b065.png"
+        }
+    ],
     "Suncord": [
         "Contributor",
         {
@@ -15,6 +21,7 @@
         }
     ],
     "Equicord": [
+        "Contributor",
         "Contributor"
     ]
 }
