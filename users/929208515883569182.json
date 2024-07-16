@@ -22,6 +22,14 @@
     ],
     "Equicord": [
         "Contributor",
-        "Contributor"
+        "Contributor",
+        {
+            "name": "Trans Cat",
+            "badge": "https://cdn.nest.rip/uploads/699febe1-bfa3-422e-bb00-2007b126a67d.png"
+        },
+        {
+            "name": "Certified Freak",
+            "badge": "https://cdn.nest.rip/uploads/649fc72f-feeb-420b-839b-7bb496dcc113.png"
+        }
     ]
 }
