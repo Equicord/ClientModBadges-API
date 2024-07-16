@@ -22,10 +22,6 @@
     ],
     "Equicord": [
         "Contributor",
-        "Contributor",
-        {
-            "name": "Equicord Team",
-            "badge": "https://i.imgur.com/2ydSGVq.png"
-        }
+        "Contributor"
     ]
 }

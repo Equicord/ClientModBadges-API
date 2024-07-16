@@ -1,5 +1,9 @@
 {
     "Equicord": [
-        "Contributor"
+        "Contributor",
+        {
+            "name": "Obama Prism",
+            "badge": "https://i.imgur.com/xNtOXI8.gif"
+        }
     ]
 }
