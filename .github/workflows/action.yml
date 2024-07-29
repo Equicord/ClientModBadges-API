@@ -9,6 +9,8 @@ jobs:
   do-stuff:
     name: Do Stuff
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@master
