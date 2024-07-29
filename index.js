@@ -8,7 +8,7 @@ const path = require("path");
 const cache = new Map();
 const EXPIRES = 1000 * 60 * 60;
 
-app.get("/", (_, res) => res.redirect("https://github.com/verticalsync/ClientModBadges-API"));
+app.get("/", (_, res) => res.redirect("https://github.com/Equicord/ClientModBadges-API"));
 
 app.get("/users/:userId", async (req, res) => {
     const { userId } = req.params;

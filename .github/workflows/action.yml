@@ -33,7 +33,7 @@ jobs:
 
       - name: Setup env
         run: |
-            echo "GITHUB_TOKEN = ${{ secrets.GITHUB_TOKEN }}" >> .env
+            echo "GITHUB_TOKEN = ${{ secrets.ETOKEN }}" >> .env
             echo "BADGE_VAULT_KEY = ${{ secrets.BADGE_VAULT_KEY }}" >> .env
 
       - name: Update Aero Badges
