@@ -62,8 +62,8 @@ jobs:
 
       - name: Push Changes
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+          git config --local user.email "78185467+thororen1234@users.noreply.github.com"
+          git config --local user.name "thororen1234"
           git add .
           git commit -m "Updated Badges" || exit 0
           git push
