@@ -1,5 +1,6 @@
 {
-    "Suncord": [
+    "Equicord": [
+        "Contributor",
         "Contributor",
         {
             "name": "Suncord Donor",
@@ -9,9 +10,5 @@
             "name": ">,,<",
             "badge": "https://cdn.nest.rip/uploads/0cb8b42d-efab-46c8-a5d7-ff018f060df5.webp"
         }
-    ],
-    "Equicord": [
-        "Contributor",
-        "Contributor"
     ]
 }

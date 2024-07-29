@@ -1,13 +1,10 @@
 {
-    "Suncord": [
+    "Equicord": [
+        "Contributor",
         "Contributor",
         {
             "name": "Hi",
             "badge": "https://cdn.nest.rip/uploads/d64a1e6c-f370-4b1d-a9c7-a608827d2174.jpg"
         }
-    ],
-    "Equicord": [
-        "Contributor",
-        "Contributor"
     ]
 }
