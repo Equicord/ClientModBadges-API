@@ -1,5 +1,9 @@
 {
     "Equicord": [
-        "Contributor"
+        "Contributor",
+        {
+            "name": "bleh",
+            "badge": "https://i.imgur.com/fEcFQq4.png"
+        }
     ]
 }
