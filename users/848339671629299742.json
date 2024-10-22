@@ -26,16 +26,16 @@
     "Equicord": [
         "Contributor",
         {
-            "name": "Code",
-            "badge": "https://i.imgur.com/pHkYsBw.gif"
-        },
-        {
-            "name": "SunSOG",
-            "badge": "https://i.imgur.com/EBcoTao.png"
+            "name": "Look Right",
+            "badge": "https://i.imgur.com/hp6EvKH.gif"
         },
         {
             "name": "Duck",
             "badge": "https://i.imgur.com/ZJ3Tbuu.gif"
+        },
+        {
+            "name": "Look Left",
+            "badge": "https://i.imgur.com/67co3CV.gif"
         }
     ]
 }
