@@ -67,6 +67,14 @@
         {
             "name": "Scanning",
             "badge": "https://badges.vencord.dev/badges/1239646546639851520/16-29e70d21ae0ded2e1f9a6f8857012d85e093be13.gif"
+        },
+        {
+            "name": "WIN",
+            "badge": "https://badges.vencord.dev/badges/1239646546639851520/18-b83c0d4c408fd6a66bfabe2d8041d78e4288a4a7.webp"
+        },
+        {
+            "name": "King",
+            "badge": "https://badges.vencord.dev/badges/1239646546639851520/19-f01d92e28218d8deec8b2373a68432f8a935aa7e.webp"
         }
     ]
 }
