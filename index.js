@@ -10,6 +10,8 @@ const EXPIRES = 1000 * 60 * 60;
 
 app.get("/", (_, res) => res.redirect("https://github.com/Equicord/ClientModBadges-API"));
 
+app.get("/ping", (_, res) => res.send('pong!'));
+
 app.get("/users/:userId", async (req, res) => {
     const { userId } = req.params;
     if (!userId) return res.status(400).json({ error: "No user id provided" });
