@@ -1,15 +1,5 @@
 {
-    "BadgeVault": [
-        {
-            "name": "Arch",
-            "badge": "https://gb.obamabot.me/3dabe53dccb996e52bd6ea384d8a7b163a7b9c99.png"
-        }
-    ],
     "Equicord": [
-        "Contributor",
-        {
-            "name": ">,,<",
-            "badge": "https://cdn.nest.rip/uploads/c86f7957-b5d3-4b73-8497-ee6b935a193f.png"
-        }
+        "Contributor"
     ]
 }
