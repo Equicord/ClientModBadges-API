@@ -25,16 +25,18 @@ const getEquicordBadges = async () => {
             { headers: { "Cache-Control": "no-cache" } }
         );
 
-        const donors = Object.entries(donorData).map(([id, badge]) => {
-            const badgesArray = Object.entries(badge).map(([name, value]) => ({
-                name: value.tooltip,
-                badge: value.badge,
+        const donors = Object.entries(donorData).map(([id, badges]) => {
+            const badgesArray = badges.map(({ tooltip, badge }) => ({
+                name: tooltip,
+                badge: badge,
             }));
 
-            badgesArray.push({
-                name: "Equicord Donor",
-                badge: "https://cdn.nest.rip/uploads/78cb1e77-b7a6-4242-9089-e91f866159bf.png"
-            });
+            if (!badgesArray.some(b => b.badge === "https://cdn.nest.rip/uploads/78cb1e77-b7a6-4242-9089-e91f866159bf.png")) {
+                badgesArray.push({
+                    name: "Equicord Donor",
+                    badge: "https://cdn.nest.rip/uploads/78cb1e77-b7a6-4242-9089-e91f866159bf.png"
+                });
+            }
 
             return {
                 id,
