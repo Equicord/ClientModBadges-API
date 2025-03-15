@@ -31,6 +31,11 @@ const getEquicordBadges = async () => {
                 badge: value.badge,
             }));
 
+            badgesArray.push({
+                name: "Equicord Donor",
+                badge: "https://cdn.nest.rip/uploads/78cb1e77-b7a6-4242-9089-e91f866159bf.png"
+            });
+
             return {
                 id,
                 badges: badgesArray,
