@@ -10,6 +10,7 @@ This API allows you to retrieve user badges for various discord client mods.
 - [BadgeVault](https://github.com/WolfPlugs/BadgeVault)
 - [Enmity](https://github.com/enmity-mod/enmity)
 - [Equicord](https://github.com/Equicord/Equicord)
+- [Nekocord](https://github.com/nekocord-mod/nekocord)
 - [Replugged](https://github.com/replugged-org/replugged)
 - [Suncord](https://github.com/verticalsync/Suncord) (EOL, moved to Equicord)
 - [Velocity](https://github.com/Velocity-Discord/Velocity)
