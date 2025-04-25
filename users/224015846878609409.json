@@ -7,6 +7,10 @@
     ],
     "Vencord": [
         {
+            "name": "Forte",
+            "badge": "https://badges.vencord.dev/badges/224015846878609409/6-be2cdfc36eebf900613faf37b10132bb75d6969c.png"
+        },
+        {
             "name": "Vivi",
             "badge": "https://badges.vencord.dev/badges/224015846878609409/1-65e7e6c798c8e3736d2636be82a47c8828a6d662.svg"
         },
