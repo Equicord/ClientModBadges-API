@@ -54,5 +54,4 @@ const getReviewDBBadges = async () => {
     }
 };
 
-
 getReviewDBBadges();
