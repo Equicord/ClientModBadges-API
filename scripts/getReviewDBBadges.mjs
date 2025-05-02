@@ -38,14 +38,14 @@ const getReviewDBBadges = async () => {
         let users = [...donors];
 
         users = users.reduce((acc, user) => {
-            const existingUser = acc.find(u => u.id === user.id);
+            const existingUser = acc.find(u => u.discordID === user.discordID);
             if (existingUser)
                 existingUser.badges = [...existingUser.badges, ...user.badges];
             else acc.push(user);
             return acc;
         }, []);
 
-        users.forEach(user => addUser(user.id, CLIENT_MODS.REVIEWDB, user.badges));
+        users.forEach(user => addUser(user.discordID, CLIENT_MODS.REVIEWDB, user.badges));
         console.log(users);
     } catch (e) {
         if (attempts++ > 4)
@@ -53,5 +53,6 @@ const getReviewDBBadges = async () => {
         else setTimeout(getReviewDBBadges, 500);
     }
 };
+
 
 getReviewDBBadges();
