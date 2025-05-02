@@ -6,39 +6,52 @@ const { addUser, CLIENT_MODS } = utils;
 
 let attempts = 1;
 
+
 const getReviewDBBadges = async () => {
     try {
-        const { data: donorData } = await axios.get(
+        const { data: rawBadges } = await axios.get(
             "https://manti.vendicated.dev/api/reviewdb/badges",
             { headers: { "Cache-Control": "no-cache" } }
         );
 
-        const userMap = new Map();
+        const donorData = {};
 
-        for (const badge of donorData) {
-            if (!userMap.has(badge.discordID)) {
-                userMap.set(badge.discordID, []);
+        for (const { discordID, name, icon } of rawBadges) {
+            if (!donorData[discordID]) {
+                donorData[discordID] = [];
             }
-
-            userMap.get(badge.discordID).push({
-                tooltip: badge.name,
-                badge: badge.icon,
-            });
+            donorData[discordID].push({ name, icon });
         }
 
-        const results = [...userMap.entries()].map(([id, badges]) => ({
-            id,
-            badges,
-        }));
+        const donors = Object.entries(donorData).map(([discordID, badges]) => {
+            const badgesArray = badges.map(({ name, icon }) => ({
+                name,
+                badge: icon,
+            }));
 
-        results.forEach(user => addUser(user.id, CLIENT_MODS.REVIEWDB, user.badges));
-        console.log(results);
+            return {
+                discordID,
+                badges: badgesArray,
+            };
+        });
+
+        let users = [...donors];
+
+        users = users.reduce((acc, user) => {
+            const existingUser = acc.find(u => u.id === user.id);
+            if (existingUser)
+                existingUser.badges = [...existingUser.badges, ...user.badges];
+            else acc.push(user);
+            return acc;
+        }, []);
+
+        users.forEach(user => addUser(user.id, CLIENT_MODS.REVIEWDB, user.badges));
+        console.log(users);
     } catch (e) {
         if (attempts++ > 4)
             console.error("Failed to get Review DB badges after 5 attempts", e);
         else setTimeout(getReviewDBBadges, 500);
     }
 };
-
 
 getReviewDBBadges();
