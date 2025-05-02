@@ -16,16 +16,10 @@ const getReviewDBBadges = async () => {
 
         const results = [];
 
-
         for (const badge of donorData) {
-            const badgesArray = badge.map(({ name, icon }) => ({
-                name: name,
-                badge: icon,
-            }));
-
             results.push({
-                discordID,
-                badges: badgesArray,
+                tooltip: badge.name,
+                badge: badge.icon,
             });
         };
 
