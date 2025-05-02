@@ -62,5 +62,11 @@
             "name": "Erm... actually",
             "badge": "https://cdn.nest.rip/uploads/8a11c9a2-a62f-407a-a8b1-af4d9705636c.png"
         }
+    ],
+    "ReviewDB": [
+        {
+            "name": "Donor",
+            "badge": "https://cdn.discordapp.com/emojis/952795305575850034.webp?size=128&quality=lossless"
+        }
     ]
 }

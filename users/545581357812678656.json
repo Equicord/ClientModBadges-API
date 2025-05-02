@@ -5,5 +5,19 @@
             "name": "true shiggy fan",
             "badge": "https://badges.vencord.dev/badges/545581357812678656/1-95d023a752f079b1aa38d1d0fec828bae5d1d4bd.gif"
         }
+    ],
+    "ReviewDB": [
+        {
+            "name": "stupid",
+            "badge": "https://cdn.discordapp.com/emojis/1059194118120681492.webp"
+        },
+        {
+            "name": "face",
+            "badge": "https://cdn.discordapp.com/emojis/1059194115855753339.webp"
+        },
+        {
+            "name": "Admin",
+            "badge": "https://cdn.discordapp.com/emojis/1040004306100826122.gif?size=128"
+        }
     ]
 }

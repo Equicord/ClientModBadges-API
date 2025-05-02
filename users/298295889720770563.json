@@ -12,5 +12,11 @@
             "name": "hiiiii",
             "badge": "https://badges.vencord.dev/badges/298295889720770563/3-e0a7a583e7c9aa6160d6dacaa3d57de53b7f3a40.gif"
         }
+    ],
+    "ReviewDB": [
+        {
+            "name": "me",
+            "badge": "https://cdn.discordapp.com/emojis/1002363471662432256.png"
+        }
     ]
 }

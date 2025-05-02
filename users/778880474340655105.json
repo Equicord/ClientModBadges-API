@@ -20,5 +20,11 @@
             "name": "me :3",
             "badge": "https://gb.obamabot.me/a25db73c9aeb79031ea3326a860c7db9337abc2e.png"
         }
+    ],
+    "ReviewDB": [
+        {
+            "name": "Banned",
+            "badge": "https://cdn.discordapp.com/emojis/399233923898540053.gif?size=128"
+        }
     ]
 }

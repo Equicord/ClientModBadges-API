@@ -1,5 +1,11 @@
 {
     "Vencord": [
         "Contributor"
+    ],
+    "ReviewDB": [
+        {
+            "name": "the lyxer",
+            "badge": "https://cdn.discordapp.com/emojis/844857330398003230.webp?size=44&quality=lossless"
+        }
     ]
 }

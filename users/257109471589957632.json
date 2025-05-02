@@ -5,5 +5,11 @@
             "name": "the vendetler",
             "badge": "https://badges.vencord.dev/badges/257109471589957632/1-31e80b2d8bcd26baa7bd6bd6f9722e1b436ad928.svg"
         }
+    ],
+    "ReviewDB": [
+        {
+            "name": "Admin",
+            "badge": "https://cdn.discordapp.com/emojis/1040004306100826122.gif?size=128"
+        }
     ]
 }

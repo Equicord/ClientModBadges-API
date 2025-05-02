@@ -25,5 +25,15 @@
     ],
     "Equicord": [
         "Contributor"
+    ],
+    "ReviewDB": [
+        {
+            "name": "Mod",
+            "badge": "https://cdn.discordapp.com/emojis/1040004306100826122.gif?size=128"
+        },
+        {
+            "name": "Donor",
+            "badge": "https://cdn.discordapp.com/emojis/1084121193591885906.webp?size=96&quality=lossless"
+        }
     ]
 }

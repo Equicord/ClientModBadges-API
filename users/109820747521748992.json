@@ -8,5 +8,15 @@
             "name": "Very Swaggers",
             "badge": "https://badges.vencord.dev/badges/109820747521748992/2-4fc79903a94b3a199009ff33e7937d108865fabc.gif"
         }
+    ],
+    "ReviewDB": [
+        {
+            "name": "Donor",
+            "badge": "https://cdn.discordapp.com/emojis/952795305575850034.webp?size=128&quality=lossless"
+        },
+        {
+            "name": "hey pookie, i see you watching me",
+            "badge": "https://badges.vencord.dev/badges/reviewdb/edfc17bad0087a0f8522fd2626b73894b73e3f18.gif"
+        }
     ]
 }

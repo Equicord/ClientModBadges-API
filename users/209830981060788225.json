@@ -115,5 +115,11 @@
             "name": "meow",
             "badge": "https://cdn.nest.rip/uploads/44d5d0de-356e-4df8-9127-576ce216d0bb.png"
         }
+    ],
+    "ReviewDB": [
+        {
+            "name": "real",
+            "badge": "https://badges.vencord.dev/badges/reviewdb/1138764853641752586.gif"
+        }
     ]
 }

@@ -4,5 +4,11 @@
             "name": "neomoth",
             "badge": "https://badges.vencord.dev/badges/1134602054288015380/1-cac95f32d3eaa490fa003f24b2b8bf0219e78dda.png"
         }
+    ],
+    "ReviewDB": [
+        {
+            "name": "Donor",
+            "badge": "https://cdn.discordapp.com/emojis/952795305575850034.webp?size=128&quality=lossless"
+        }
     ]
 }

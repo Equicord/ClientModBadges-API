@@ -4,5 +4,11 @@
             "name": "Gary",
             "badge": "https://badges.vencord.dev/badges/683550738198036516/1-d7b5fd5d4c5c500b3bfe1d9787a8c8d15efefc25.webp"
         }
+    ],
+    "ReviewDB": [
+        {
+            "name": "Donor",
+            "badge": "https://cdn.discordapp.com/emojis/952795305575850034.webp?size=128&quality=lossless"
+        }
     ]
 }

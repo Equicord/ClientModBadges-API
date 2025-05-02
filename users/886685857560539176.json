@@ -8,5 +8,11 @@
     ],
     "Equicord": [
         "Contributor"
+    ],
+    "ReviewDB": [
+        {
+            "name": "Duke the Java mascot Java is here Java is there Java is everywhere",
+            "badge": "https://badges.vencord.dev/badges/reviewdb/1002364072672628767.gif"
+        }
     ]
 }
