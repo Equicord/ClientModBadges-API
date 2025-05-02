@@ -6,7 +6,6 @@ const { addUser, CLIENT_MODS } = utils;
 
 let attempts = 1;
 
-
 const getReviewDBBadges = async () => {
     try {
         const { data: donorData } = await axios.get(
@@ -14,27 +13,20 @@ const getReviewDBBadges = async () => {
             { headers: { "Cache-Control": "no-cache" } }
         );
 
-        const results = [];
-
-        for (const badge of donorData) {
-            results.push({
-                tooltip: badge.name,
-                badge: badge.icon,
+        const donors = Object.entries(donorData).map((name, icon, id) => {
+            const badgesArray = ({
+                name: name,
+                badge: icon,
             });
-        };
 
-        let users = [...results];
+            return {
+                id,
+                badges: badgesArray,
+            };
+        });
 
-        users = users.reduce((acc, user) => {
-            const existingUser = acc.find(u => u.id === user.id);
-            if (existingUser)
-                existingUser.badges = [...existingUser.badges, ...user.badges];
-            else acc.push(user);
-            return acc;
-        }, []);
-
-        users.forEach(user => addUser(user.id, CLIENT_MODS.REVIEWDB, user.badges));
-        console.log(users);
+        donors.forEach(user => addUser(user.id, CLIENT_MODS.REVIEWDB, user.name));
+        console.log(donors);
     } catch (e) {
         if (attempts++ > 4)
             console.error("Failed to get Review DB badges after 5 attempts", e);

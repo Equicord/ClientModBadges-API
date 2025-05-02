@@ -6,7 +6,6 @@ const { addUser, CLIENT_MODS } = utils;
 
 let attempts = 1;
 
-
 const getEquicordBadges = async () => {
     try {
         const { data } = await axios.get(
