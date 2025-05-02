@@ -53,6 +53,9 @@ jobs:
       - name: Update Enmity Badges
         run: node scripts/getEnmityBadges.mjs
 
+      - name: Update Nekocord Badges
+        run: node scripts/getNekocordBadges.mjs
+
       - name: Update Velocity Badges
         run: node scripts/getVelocityBadges.mjs
 
