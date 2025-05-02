@@ -65,6 +65,9 @@ jobs:
       - name: Update Equicord Badges
         run: node scripts/getEquicordBadges.mjs
 
+      - name: Update ReviewDB Badges
+        run: node scripts/getReviewDBBadges.mjs
+
       - name: Push Changes
         run: |
           git config --local user.email "78185467+thororen1234@users.noreply.github.com"

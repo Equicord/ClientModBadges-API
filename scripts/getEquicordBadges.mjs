@@ -21,7 +21,7 @@ const getEquicordBadges = async () => {
         });
 
         const { data: donorData } = await axios.get(
-            "https://raw.githubusercontent.com/Equicord/Ignore/main/badges.json",
+            "https://equicord.org/badges",
             { headers: { "Cache-Control": "no-cache" } }
         );
 
