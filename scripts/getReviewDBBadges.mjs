@@ -13,25 +13,32 @@ const getReviewDBBadges = async () => {
             { headers: { "Cache-Control": "no-cache" } }
         );
 
-        const donors = Object.entries(donorData).map((name, icon, id) => {
-            const badgesArray = ({
-                name: name,
-                badge: icon,
+        const userMap = new Map();
+
+        for (const badge of donorData) {
+            if (!userMap.has(badge.discordID)) {
+                userMap.set(badge.discordID, []);
+            }
+
+            userMap.get(badge.discordID).push({
+                tooltip: badge.name,
+                badge: badge.icon,
             });
+        }
 
-            return {
-                id,
-                badges: badgesArray,
-            };
-        });
+        const results = [...userMap.entries()].map(([id, badges]) => ({
+            id,
+            badges,
+        }));
 
-        donors.forEach(user => addUser(user.id, CLIENT_MODS.REVIEWDB, user.name));
-        console.log(donors);
+        results.forEach(user => addUser(user.id, CLIENT_MODS.REVIEWDB, user.badges));
+        console.log(results);
     } catch (e) {
         if (attempts++ > 4)
             console.error("Failed to get Review DB badges after 5 attempts", e);
         else setTimeout(getReviewDBBadges, 500);
     }
 };
+
 
 getReviewDBBadges();
