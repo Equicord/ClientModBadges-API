@@ -12,18 +12,6 @@
         }
     ],
     "Equicord": [
-        "Contributor",
-        {
-            "name": "Mii",
-            "badge": "https://cdn.nest.rip/uploads/942f73bb-ce18-4f2b-a649-d407ee104b77.png"
-        },
-        {
-            "name": "Lego",
-            "badge": "https://cdn.nest.rip/uploads/0e06515b-0f43-4a21-a7b6-e890fcc6d534.png"
-        },
-        {
-            "name": "Equicord Donor",
-            "badge": "https://cdn.nest.rip/uploads/78cb1e77-b7a6-4242-9089-e91f866159bf.png"
-        }
+        "Contributor"
     ]
 }
