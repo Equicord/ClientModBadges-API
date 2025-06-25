@@ -1,16 +1,5 @@
 {
     "Vencord": [
         "Contributor"
-    ],
-    "Equicord": [
-        "Contributor",
-        {
-            "name": "Suncord Donor",
-            "badge": "https://cdn.nest.rip/uploads/78cb1e77-b7a6-4242-9089-e91f866159bf.png"
-        },
-        {
-            "name": "<3",
-            "badge": "https://cdn.nest.rip/uploads/33639fb5-c9aa-43d0-a8c4-9558e5e22989.gif"
-        }
     ]
 }
