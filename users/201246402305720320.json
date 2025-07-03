@@ -1,8 +1,16 @@
 {
     "Vencord": [
         {
+            "name": "Monster enjoyer",
+            "badge": "https://badges.vencord.dev/badges/201246402305720320/3-dc12a3f9c6c5684c62b2aca41a6841ee8856c973.png"
+        },
+        {
             "name": "Verified",
             "badge": "https://badges.vencord.dev/badges/201246402305720320/1-d61853f3c14c305ead90b232b935eb8db441309c.png"
+        },
+        {
+            "name": "Developer",
+            "badge": "https://badges.vencord.dev/badges/201246402305720320/3-2801fb1d477756afa02dc6f502d82d9ecb00504b.png"
         }
     ]
 }
