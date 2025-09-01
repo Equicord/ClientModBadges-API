@@ -7,13 +7,6 @@
         {
             "name": "nekocord Contributor",
             "badge": "https://nekocord.dev/assets/6/69/69a9bd07d916dbaeb80663c63d5586ca85e4879ba1db30c53a3939edf04708aa.png"
-        },
-        {
-            "name": "nekocord Tester",
-            "badge": "https://nekocord.dev/assets/5/5c/5c0956d48f6d267fbfb29cf056539856cfbae36ddfd8f3b46efa95f800d177e2.gif"
         }
-    ],
-    "Vencord": [
-        "Contributor"
     ]
 }
