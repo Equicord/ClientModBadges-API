@@ -24,6 +24,29 @@
             "badge": "https://badges.vencord.dev/badges/848339671629299742/1-8d2f71fa61e73298c5f12644943d2ce59a22f6f7.gif"
         }
     ],
+    "Equicord": [
+        "Contributor",
+        {
+            "name": "Look Right",
+            "badge": "https://cdn.nest.rip/uploads/bba8cc1b-fdbc-40ea-9bb1-55caf6c3a9f6.gif"
+        },
+        {
+            "name": "Duck",
+            "badge": "https://cdn.nest.rip/uploads/1adc8862-e904-46a7-8302-e65c37add0e2.gif"
+        },
+        {
+            "name": "Look Left",
+            "badge": "https://cdn.nest.rip/uploads/b89d980b-976e-4591-89b1-595b0185453a.gif"
+        },
+        {
+            "name": "Equicord Founder",
+            "badge": "https://cdn.nest.rip/uploads/8117e094-8954-4543-9660-1ce049c95451.gif"
+        },
+        {
+            "name": "Equicord Donor",
+            "badge": "https://cdn.nest.rip/uploads/78cb1e77-b7a6-4242-9089-e91f866159bf.png"
+        }
+    ],
     "ReviewDB": [
         {
             "name": "Spin",
