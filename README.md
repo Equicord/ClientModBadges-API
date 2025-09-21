@@ -2,7 +2,7 @@
 
 This API allows you to retrieve user badges for various discord client mods.
 
-### Supported client mods:
+### Supported client mods
 
 - [Aero](https://github.com/aero-mod/aero)
 - [Aliucord](https://github.com/Aliucord/Aliucord)
@@ -11,6 +11,7 @@ This API allows you to retrieve user badges for various discord client mods.
 - [Enmity](https://github.com/enmity-mod/enmity)
 - [Equicord](https://github.com/Equicord/Equicord)
 - [Nekocord](https://github.com/nekocord-mod/nekocord)
+- [Ra1ncord](https://github.com/ra1ncord/rain)
 - [Replugged](https://github.com/replugged-org/replugged)
 - [Suncord](https://github.com/verticalsync/Suncord) (EOL, moved to Equicord)
 - [Velocity](https://github.com/Velocity-Discord/Velocity)
