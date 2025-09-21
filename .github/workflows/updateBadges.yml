@@ -68,6 +68,9 @@ jobs:
       - name: Update ReviewDB Badges
         run: node scripts/getReviewDBBadges.mjs
 
+      - name: Update Ra1ncord Badges
+        run: node scripts/getRa1ncordBadges.mjs
+        
       - name: Push Changes
         run: |
           git config --local user.email "78185467+thororen1234@users.noreply.github.com"
