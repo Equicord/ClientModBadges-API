@@ -35,8 +35,9 @@ app.get("/users/:userId", async (req, res) => {
                     if (key === "custom" && body.custom?.name && body.custom?.icon) {
                         return { name: body.custom.name, badge: body.custom.icon };
                     }
-                    return key;
-                });
+                    return key !== "custom" ? key : null;
+                })
+                .filter(Boolean);
 
             _data.Replugged = badges;
         } catch (error) {
