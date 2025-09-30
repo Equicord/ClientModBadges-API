@@ -20,10 +20,25 @@ app.get("/users/:userId", async (req, res) => {
     if (cache.has(userId) && cache.get(userId).expires > Date.now() && cache.get(userId).badges.length) _data = cache.get(userId).badges;
     else {
         try {
-            const resp = await axios.get(`https://replugged.dev/api/v1/users/${userId}`, { headers: { "Cache-Control": "no-cache" }, timeout: 5000 });
-            if (resp.status != 200 || !resp.data?.badges) return;
+            const resp = await axios.get(`https://replugged.dev/api/v1/users/${userId}`, {
+                headers: { "Cache-Control": "no-cache" },
+                timeout: 5000
+            });
+
+            if (resp.status !== 200 || !resp.data?.badges) return;
+
             const body = resp.data.badges;
-            _data.Replugged = Object.keys(body).filter(key => body[key] === true);
+
+            const badges = Object.keys(body)
+                .filter(key => body[key] === true || key === "custom")
+                .map(key => {
+                    if (key === "custom" && body.custom?.name && body.custom?.icon) {
+                        return { name: body.custom.name, badge: body.custom.icon };
+                    }
+                    return key;
+                });
+
+            _data.Replugged = badges;
         } catch (error) {
             console.error(`[ERROR | Replugged] ${error.message}`);
         }

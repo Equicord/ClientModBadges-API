@@ -12,17 +12,19 @@ const getAliucordBadges = async () => {
             { headers: { "Cache-Control": "no-cache" } }
         );
 
-        const donors = Object.entries(donorData.users).map(([id, badges]) => {
-            const { roles } = badges;
-            const customBadges = badges.custom ? Object.entries(badges.custom).map(([_, badge]) => ({ name: badge.text, badge: badge.url })) : [];
+        const donors = Object.entries(donorData.users)
+            .filter(([_, badges]) => Array.isArray(badges.roles))
+            .map(([id, badges]) => {
+                const { roles } = badges;
+                const customBadges = badges.custom ? Object.entries(badges.custom).map(([_, badge]) => ({ name: badge.text, badge: badge.url })) : [];
 
-            const badgeList = [...roles, ...customBadges];
+                const badgeList = [...roles, ...customBadges];
 
-            return {
-                id,
-                badges: badgeList,
-            };
-        });
+                return {
+                    id,
+                    badges: badgeList,
+                };
+            });
 
         donors.forEach(user =>
             addUser(user.id, CLIENT_MODS.ALIUCORD, user.badges)
