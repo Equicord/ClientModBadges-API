@@ -1,4 +1,6 @@
-# ClientModBadges-API
+## Equibadges-old (ClientModBadges-API)
+
+### Moved to [Equibadges](https://github.com/Equicord/Equibadges)
 
 This API allows you to retrieve user badges for various discord client mods.
 
